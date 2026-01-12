@@ -83,6 +83,58 @@ const contacts = [
     contact: "0910-213-7499",
     email: "dilg.paloperations@gmail.com"
   },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "ENGR. JOSE P. CONDE",
+    designation: "DPWH- 1ST DEO",
+    contact: "0939-401-2736",
+    email: "-"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "ENGR. PAUL ABRAHAM ESCANDOR",
+    designation: "DPWH-3RD DEO",
+    contact: "0917-873-3226",
+    email: "-"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "JERIK SIASON",
+    designation: "DILG PPC",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "MARIA ALYSSA G. ABONALES",
+    designation: "PDRRMO PALAWAN",
+    contact: "0927-115-3403",
+    email: "pdrrmopalawanriskcom@gmail.com"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "LLOYD DE LA CRUZ",
+    designation: "CDRRMO PPC",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "STGEPR SECRETARIAT",
+    name: "JOE MARK A. CABADOR (Primary)",
+    designation: "CHIEF, OPERATIONS SECTION, OCD MIMAROPA",
+    contact: "0916-885-5933",
+    email: "jcabador@gmail.com"
+  },
+  {
+    position: "STGEPR SECRETARIAT",
+    name: "GLORY BALEGAN (Alternate)",
+    designation: "OPERATIONS SECTION, OCD MIMAROPA",
+    contact: "-",
+    email: "mimaropa@ocd.gov.ph"
+  },
+
+
+
 
 
 
