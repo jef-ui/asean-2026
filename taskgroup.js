@@ -34,6 +34,43 @@ const contacts = [
     contact: "0995-726-6526",
     email: "virgo.pinangay@dict.gov.ph "
   },
+  {
+    position: "DISASTER RISK REDUCTION AND MANAGEMENT",
+    name: "MARIA AIZA S. SIASON (Primary)",
+    designation: "CHIEF RRMS, OCD MIMAROPA",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "DISASTER RISK REDUCTION AND MANAGEMENT",
+    name: "MARY AN B. ACEVEDA (Alternate)",
+    designation: "CHIEF PLANS, OCD MIMAROPA",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "CAMP MANAGEMENT",
+    name: "SHEILA TAPIA",
+    designation: "DIRECTOR III / ARDO / DRMD CHIEF / DSWD MIMAROPA",
+    contact: "0919-008-3882",
+    email: "sstapia@dswd.gov.ph"
+  },
+  {
+    position: "LOGISTICS",
+    name: "JERVIS LLOYD ATILANO",
+    designation: "CDO II, OCD MIMAROPA",
+    contact: "09173007955",
+    email: "jervsatilano@gmail.com"
+  },
+  {
+    position: "PUBLIC WORKS AND ENGINEERING",
+    name: "MARIELLE CRIZZA BURCE",
+    designation: "-",
+    contact: "-",
+    email: "-"
+  },
+
+
 
 
 
