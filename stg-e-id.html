@@ -43,7 +43,8 @@
 
       .dashboard {
         min-height: 100vh;
-        overflow: hidden;
+        overflow-y: auto;
+        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -170,6 +171,64 @@
     .icon img:hover {
       transform: scale(1.1);
     }
+
+    
+    /* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+
+  .main {
+    gap: 15px;
+  }
+
+  .main img {
+    height: 400px;
+  }
+}
+
+/* ---------- MOBILE PHONES ---------- */
+@media (max-width: 768px) {
+
+  .header img {
+    height: auto;
+    max-width: 70%;
+  }
+
+  .main {
+    flex-direction: column;   /* stack content */
+    gap: 15px;
+  }
+
+  .main img {
+    height: auto;
+    max-width: 90%;
+  }
+
+  .icon img {
+    height: 50px;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+}
+
+/* ---------- EXTRA SMALL PHONES ---------- */
+@media (max-width: 480px) {
+
+  .main img {
+    max-width: 100%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .icon img {
+    height: 45px;
+  }
+}
+
     </style>
   </head>
 
