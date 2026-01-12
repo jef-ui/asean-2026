@@ -2,9 +2,9 @@ const contacts = [
   {
     position: "DEPUTY COMMANDER",
     name: "JOMMEL M. MERANO",
-    designation: "OCD MIMAROPA",
-    contact: "",
-    email: "-"
+    designation: "CHIEF DPS, OCD MIMAROPA",
+    contact: "0917-501-4996",
+    email: "mimaropa@ocd.gov.ph"
   },
   {
     position: "JOINT PLANNING GROUP",
