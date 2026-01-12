@@ -34,6 +34,57 @@ const contacts = [
     contact: "0920-925-3466",
     email: "judedsumegang@gmail.com"
   },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "RAMONITO MARTIN",
+    designation: "DOH HEMS",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "LT NINO ANGELO DELA CRUZ",
+    designation: "CGD PAL",
+    contact: "0975-110-7858",
+    email: "cgdpal.pcg@gmail.com"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "LTJG FRIENDLY R MERCADO PCG",
+    designation: "STATION COMMANDER/ CGSNEP",
+    contact: "0953-443-5946",
+    email: "cgs_coron@yahoo.com.ph"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "ARGEN AZUL",
+    designation: "DICT MIMAROPA",
+    contact: "0923-090-4371",
+    email: "argen.azul@dict.gov.ph"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "ERIC ABOROT",
+    designation: "DSWD MIMAROPA",
+    contact: "0977-856-0040",
+    email: "epaborot@dswd.gov.ph"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "LGOO VI ERIKA MAE GUMABOL",
+    designation: "DILG MIMAROPA",
+    contact: "0917-700-9274",
+    email: "dilgmimaropa@gmail.com"
+  },
+  {
+    position: "JOINT PLANNING GROUP",
+    name: "CHERYL MARTINEZ",
+    designation: "DILG PALAWAN",
+    contact: "0910-213-7499",
+    email: "dilg.paloperations@gmail.com"
+  },
+
+
 
 ];
 
