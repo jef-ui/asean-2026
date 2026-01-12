@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASEAN 2026</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      position: relative;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+
+  body::before {
+  content: "";
+  background-image: url("images/background.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      font-weight: bold;
+      color: black;
+    }
+
+    /* Layout */
+    .dashboard {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .header img {
+      height: 100px;
+    }
+
+    .containerheader {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      width: 80%;
+      margin-left: 150px;
+    }
+
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      gap: 20px;
+    }
+
+    /* Buttons & Icons */
+    .button {
+      height: 40px;
+      background-color: #0038A8;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+    }
+
+    .icon img {
+      height: 40px;
+      background-color: #CE1126;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .icon img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Table */
+    .dbtable {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .dbtable th {
+      color: #001c55;
+      padding: 10px 16px;
+      text-align: left;
+      border: 1px solid black;
+    }
+
+    .dbtable td {
+      font-size: 12px;
+      font-weight: 500;
+      padding: 10px 16px;
+      text-align: left;
+      border: 1px solid black;
+    }
+
+    /* ---------- TABLET ---------- */
+@media (max-width: 1024px) {
+
+  .containerheader {
+    width: 90%;
+    margin-left: 0;
+    justify-content: flex-start;
+  }
+
+  .main {
+    width: 95%;
+  }
+}
+
+/* ---------- MOBILE PHONES ---------- */
+@media (max-width: 768px) {
+
+  .header img {
+    height: auto;
+    max-width: 70%;
+  }
+
+  .containerheader {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .button a {
+    font-size: 16px;
+  }
+
+
+  .main {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .dbtable {
+    min-width: 700px; 
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon img {
+    height: 35px;
+  }
+
+  .button a {
+    font-size: 15px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="dashboard">
+    <div class="header">
+      <img src="images/asean-ocd-logo.png" alt="asean logo">
+    </div>
+
+    <div class="containerheader">
+      <a class="icon" href="mainpage.html">
+        <img src="icons/arrow-circle-left.svg" alt="back">
+      </a>
+      <button class="button">
+        <a href="mainpage.html">CREATE ID</a>
+      </button>
+    </div>
+
+    <div class="main-container">
+      <div class="main">
+        <table class="dbtable">
+          <thead>
+            <tr>
+              <th>CTRL/ID NUMBER</th>
+              <th>NAME</th>
+              <th>AGENCY</th>
+              <th>DESIGNATION</th>
+              <th>CONTACT NUMBER</th>
+              <th>EMAIL ADDRESS</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ASEAN-_2026_001</td>
+              <td>JOHN DOE</td>
+              <td>PDRRMO PALAWAN</td>
+              <td>INCIDENT COMMANDER</td>
+              <td>0990-000-0000</td>
+              <td>john-doe@gmail.com</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

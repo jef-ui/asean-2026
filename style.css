@@ -1,0 +1,26 @@
+body {
+        position: relative;
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+}
+
+body::before {
+    content: "";
+    background-image: url(images/background.png);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+ 
+    
+    opacity: 10;                  /* 👈 background opacity */
+    z-index: -1;                   /* 👈 stays behind content */
+
+
+}
