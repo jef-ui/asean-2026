@@ -2,14 +2,14 @@ const contacts = [
   {
     position: "DEPUTY COMMANDER",
     name: "JOMMEL M. MERANO",
-    designation: "CHIEF DPS, OCD MIMAROPA",
+    designation: "CHIEF, DISASTER PREPAREDNESS SECTION, OCD MIMAROPA",
     contact: "0917-501-4996",
     email: "mimaropa@ocd.gov.ph"
   },
   {
     position: "JOINT PLANNING GROUP",
     name: "MARIA AIZA S. SIASON",
-    designation: "OCD MIMAROPA",
+    designation: "CHIEF, REHABILITATION AND RECOVERY MANAGEMENT SECTION, OCD MIMAROPA",
     contact: "-",
     email: "-"
   },
