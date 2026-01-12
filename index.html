@@ -5,40 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ASEAN 2026</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <style>
-
-        * {
-            box-sizing: border-box;
-            font-family: 'Montserrat', sans-serif;
-        }
+      * {
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+      }
 
       body {
         position: relative;
         min-height: 100vh;
         margin: 0;
         padding: 0;
-
       }
 
-  body::before {
-  content: "";
-  background-image: url("images/background.png");
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  z-index: -1;
-}
-
+      body::before {
+        content: "";
+        background-image: url("images/background.png");
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: -1;
+      }
 
       .dashboard {
         min-height: 100vh;
@@ -53,74 +53,70 @@
         height: 500px;
       }
 
-    .button {
-        background-color: #0038A8;
+      .button {
+        background-color: #0038a8;
         border: none;
         padding: 10px 20px;
         border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         transition: transform 0.3s ease;
-    }
+      }
 
-    .button:hover {
+      .button:hover {
         transform: scale(1.1);
-    }
+      }
 
-    a {
+      a {
         text-decoration: none;
         color: white;
         font-size: 20px;
         font-weight: 800;
-    }
+      }
 
-    .header {
+      .header {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+      }
 
-    /* ---------- RESPONSIVE: MOBILE ---------- */
-@media (max-width: 768px) {
+      /* ---------- RESPONSIVE: MOBILE ---------- */
+      @media (max-width: 768px) {
+        .dashboard {
+          padding: 20px;
+        }
 
-  .dashboard {
-    padding: 20px;
-  }
+        .header img {
+          height: auto; /* remove fixed height */
+          max-width: 80%; /* scale logo on phone */
+        }
 
+        .button {
+          padding: 12px 24px; /* better tap size */
+          margin-top: 20px;
+        }
 
-  .header img {
-    height: auto;          /* remove fixed height */
-    max-width: 80%;        /* scale logo on phone */
-  }
+        a {
+          font-size: 18px; /* readable on phone */
+        }
+      }
 
-  .button {
-    padding: 12px 24px;    /* better tap size */
-    margin-top: 20px;
-  }
+      /* ---------- EXTRA SMALL PHONES ---------- */
+      @media (max-width: 480px) {
+        .header img {
+          max-width: 90%;
+        }
 
-  a {
-    font-size: 18px;       /* readable on phone */
-  }
-}
-
-/* ---------- EXTRA SMALL PHONES ---------- */
-@media (max-width: 480px) {
-
-  .header img {
-    max-width: 90%;
-  }
-
-  a {
-    font-size: 16px;
-  }
-}
-
+        a {
+          font-size: 16px;
+        }
+      }
     </style>
   </head>
 
   <body>
     <div class="dashboard">
       <div class="header">
-        <img src="images/asean-logo.png" alt="aseanlogo" class="logo">
+        <img src="images/asean-logo.png" alt="aseanlogo" class="logo" />
       </div>
       <button class="button"><a href="mainpage.html">PROCEED</a></button>
     </div>

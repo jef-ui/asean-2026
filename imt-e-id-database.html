@@ -107,6 +107,8 @@
       border-radius: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: transform 0.3s ease;
+      color: white;
+      font-weight: bold;
     }
 
     .button:hover {
@@ -145,6 +147,51 @@
       text-align: left;
       border: 1px solid black;
     }
+
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    .modal-box {
+      background: #ffffff;
+      width: 420px;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .modal-box h2 {
+      margin-bottom: 15px;
+      color: #b91c1c;
+    }
+
+    .modal-box p {
+      font-size: 15px;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+
+    .ok-btn {
+      margin-top: 20px;
+      background: #0038A8;
+      color: white;
+      border: none;
+      padding: 10px 30px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+
 
     /* ---------- TABLET ---------- */
 @media (max-width: 1024px) {
@@ -221,9 +268,21 @@
       <a class="icon" href="mainpage.html">
         <img src="icons/arrow-circle-left.svg" alt="back">
       </a>
-      <button class="button">
-        <a href="mainpage.html">CREATE ID</a>
-      </button>
+
+      <button class="button" onclick="openModal()">CREATE ID</button>
+
+      <!-- Modal Overlay -->
+      <div class="modal-overlay" id="noticeModal">
+        <div class="modal-box">
+
+          <h2>Notice</h2>
+
+          <p>Generating ASEAN IDs through this site is <strong>STRICTLY PROHIBITED</strong> without proper authorization</p>
+
+          <button class="ok-btn" onclick="closeModal()">OK</button>
+
+        </div>
+      </div>
     </div>
 
     <div class="main-container">
@@ -254,4 +313,12 @@
     </div>
   </div>
 </body>
+<script>
+  function openModal() {
+    document.getElementById("noticeModal").style.display = "flex";
+  }
+  function closeModal() {
+    document.getElementById("noticeModal").style.display = "none";
+  }
+</script>
 </html>
