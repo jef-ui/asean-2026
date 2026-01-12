@@ -65,7 +65,7 @@
     .container-grid {
       width: 90%;
       display: grid;
-      grid-template-columns: repeat(3, 300px);
+      grid-template-columns: repeat(4, 300px);
       grid-template-rows: auto;
       justify-content: center;
       gap: 40px;
@@ -114,6 +114,10 @@
 
     a {
       text-decoration: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
     }
 
@@ -183,21 +187,28 @@
       <div class="container-grid">
 
         <a href="imt-e-id.html"><div class="box">
-          <img src="icons/identification-card-thin.svg" alt="icon" class="icon">
+          <img src="icons/identification-card.svg" alt="icon" class="icon">
           <b>IMT</b>
           <p>Auto-Generated Identification Card</p>
         </div></a>
 
         <a href="stg-e-id.html"><div class="box">
-          <img src="icons/identification-badge-thin.svg" alt="icon" class="icon">
+          <img src="icons/identification-badge.svg" alt="icon" class="icon">
           <b>STGEPR</b>
           <p>Auto-Generated Identification Card</p>
         </div></a>
+
+        <a href="stg-e-id.html"><div class="box">
+          <img src="icons/address-book.svg" alt="icon" class="icon">
+          <p>Directories</p>
+        </div></a>
         
-        <a href="#"><div class="box">
-          <img src="icons/file-arrow-down-thin.svg" alt="icon" class="icon">
+        <a href="stg-e-id.html"><div class="box">
+          <img src="icons/file-arrow-down.svg" alt="icon" class="icon">
           <p>Resources</p>
         </div></a>
+
+        
 
       </div>
     </div>
