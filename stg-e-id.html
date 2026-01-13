@@ -173,6 +173,10 @@
       transform: scale(1.1);
     }
 
+       .footer {
+      display: none;
+    }
+
     
     /* ---------- TABLET ---------- */
 @media (max-width: 1024px) {
@@ -228,6 +232,43 @@
   .icon img {
     height: 45px;
   }
+
+  .footer {
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  height: 50px;
+  background-color: #CE1126;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-icon {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.ul {
+display: flex;
+}
+
+.nav-icon img {
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon img:hover {
+  transform: scale(1.2);
+}
 }
 
     </style>
@@ -245,6 +286,15 @@
         <p>ID SAMPLE</p>
         </div>
         <a class="icon" href="stg-e-id-database.html"><img src="icons/arrow-circle-right.svg" alt="icon"></a>
+      </div>
+      <div class="footer">
+        <ul class="nav-icon">
+          <li><a href="directories.html"><img src="icons/address-book.svg" alt="directories"></a></li>
+          <li><a href="#"><img src="icons/file-arrow-down.svg" alt="resources"></a></li>
+          <li><a href="mainpage.html"><img src="icons/house-simple.svg" alt="home" class="hbutton"></a></li>
+          <li><a href="googlemap.html"><img src="icons/map-pin-line.svg" alt="googlemap"></a></li>
+          <li><a href="imt.html"><img src="icons/identification-badge.svg" alt=""></a></li>
+        </ul>
       </div>
     </div>
   </body>
