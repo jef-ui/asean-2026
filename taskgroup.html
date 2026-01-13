@@ -64,7 +64,7 @@
       flex-direction: column;
       gap: 10px;
       overflow-y: auto;
-      overflow-x: hidden;
+      overflow-x: visible;
     }
 
     .header {
@@ -100,8 +100,9 @@
       width: 80%;
       gap: 20px;
       overflow-y: auto;
-      overflow-x: hidden;
+      overflow-x: visible;
       margin-bottom: 30px;
+      border: 1px solid black;
     }
 
     /* Buttons & Icons */
@@ -225,6 +226,13 @@
       transform: scale(1.02);
     }
 
+        .table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch; /* smooth swipe on iOS */
+}
+
 
     /* ---------- TABLET ---------- */
 @media (max-width: 1024px) {
@@ -321,6 +329,7 @@
 
     <div class="main-container">
       <div class="main">
+        <div class="table-wrapper">
         <table class="dbtable">
           <thead>
             <tr>
@@ -341,6 +350,7 @@
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     </div>
   </div>
