@@ -49,7 +49,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 
@@ -230,6 +230,29 @@
   }
 }
 
+.footer {
+  
+  height: 40px;
+  background-color: #0038A8;
+  width: 100%;
+  align-items: flex-end;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-icon img {
+  height: 25px;
+}
 
     </style>
   </head>
@@ -246,6 +269,14 @@
         <p>ID SAMPLE</p>
         </div>
         <a class="icon" href="imt-e-id-database.html"><img src="icons/arrow-circle-right.svg" alt="icon"></a>
+      </div>
+      <div class="footer">
+        <ul class="nav-icon">
+          <li><a href="mainpage.html"><img src="icons/house-simple.svg" alt="home"></a></li>
+          <li><a href="directories.html"><img src="icons/address-book.svg" alt="directories"></a></li>
+          <li><a href="#"><img src="icons/file-arrow-down.svg" alt="resources"></a></li>
+          <li><a href="googlemap.html"><img src="icons/map-pin-line.svg" alt="googlemap"></a></li>
+        </ul>
       </div>
     </div>
   </body>
