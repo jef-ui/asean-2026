@@ -129,7 +129,7 @@ const contacts = [
     position: "STGEPR SECRETARIAT",
     name: "GLORY BALEGAN (Alternate)",
     designation: "OPERATIONS SECTION, OCD MIMAROPA",
-    contact: "-",
+    contact: "0965-247-7584",
     email: "mimaropa@ocd.gov.ph"
   },
 
