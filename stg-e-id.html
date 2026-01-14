@@ -9,6 +9,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="images/asean-logo.png" type="asean.png">
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script>
+  const TOKEN = "ASEAN_ACCESS_26";
+
+  if (sessionStorage.getItem("asean_token") !== TOKEN) {
+    window.location.replace("index.html");
+  }
+</script>
 
     <style>
 

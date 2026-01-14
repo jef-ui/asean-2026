@@ -1,125 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASEAN 2026</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="images/asean-logo.png" type="asean.png">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ASEAN 2026</title>
 
-    <style>
-      * {
-        box-sizing: border-box;
-        font-family: "Montserrat", sans-serif;
-      }
+<link rel="stylesheet" href="style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+  rel="stylesheet"
+/>
+<link rel="icon" href="images/asean-logo.png" />
 
-      body {
-        position: relative;
-        min-height: 100vh;
-        margin: 0;
-        padding: 0;
-      }
+<style>
+* { box-sizing: border-box; font-family: Montserrat, sans-serif; }
 
-      body::before {
-        content: "";
-        background-image: url("images/background.png");
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        opacity: 0.5;
-        z-index: -1;
-      }
+body {
+  min-height: 100vh;
+  margin: 0;
+  position: relative;
+}
 
-      .dashboard {
-        min-height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-      }
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("images/background.png") center / cover no-repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
 
-      .header img {
-        height: 500px;
-      }
+.dashboard {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-      .button {
-        background-color: #0038a8;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        transition: transform 0.3s ease;
-      }
+.header img { height: 500px; }
 
-      .button:hover {
-        transform: scale(1.1);
-      }
+.button {
+  background: #0038a8;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+}
 
-      a {
-        text-decoration: none;
-        color: white;
-        font-size: 20px;
-        font-weight: 800;
-      }
+.button span {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
 
-      .header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+/* ===== MODALS ===== */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
 
-      /* ---------- RESPONSIVE: MOBILE ---------- */
-      @media (max-width: 768px) {
-        .dashboard {
-          padding: 20px;
-        }
+.modal {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: center;
+}
 
-        .header img {
-          height: auto; /* remove fixed height */
-          max-width: 80%; /* scale logo on phone */
-        }
+.otp-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
 
-        .button {
-          padding: 12px 24px; /* better tap size */
-          margin-top: 20px;
-        }
+.otp-inputs input {
+  width: 55px;
+  height: 55px;
+  font-size: 24px;
+  text-align: center;
+}
+</style>
+</head>
 
-        a {
-          font-size: 18px; /* readable on phone */
-        }
-      }
+<body>
 
-      /* ---------- EXTRA SMALL PHONES ---------- */
-      @media (max-width: 480px) {
-        .header img {
-          max-width: 90%;
-        }
+<!-- OTP MODAL -->
+<div class="modal-overlay" id="otpModal">
+  <div class="modal">
+    <h3>Enter Access Code</h3>
 
-        a {
-          font-size: 16px;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="dashboard">
-      <div class="header">
-        <img src="images/asean-logo.png" alt="aseanlogo" class="logo" />
-      </div>
-      <button class="button"><a href="mainpage.html">GET STARTED</a></button>
+    <div class="otp-inputs">
+      <input maxlength="1">
+      <input maxlength="1">
+      <input maxlength="1">
+      <input maxlength="1">
     </div>
-  </body>
+
+    <button class="button" onclick="verifyOTP()">
+      <span>Continue</span>
+    </button>
+  </div>
+</div>
+
+<!-- ❌ INVALID MODAL -->
+<div class="modal-overlay" id="errorModal">
+  <div class="modal">
+    <h3 style="color:red">Invalid Code</h3>
+    <p>Please try again.</p>
+
+    <button class="button" onclick="closeError()">
+      <span>OK</span>
+    </button>
+  </div>
+</div>
+
+<!-- ✅ SUCCESS MODAL -->
+<div class="modal-overlay" id="successModal">
+  <div class="modal">
+    <h3 style="color:green">Access Granted</h3>
+    <p>Redirecting...</p>
+  </div>
+</div>
+
+<!-- MAIN PAGE -->
+<div class="dashboard">
+  <div class="header">
+    <img src="images/asean-logo.png" alt="aseanlogo">
+  </div>
+
+  <button class="button" onclick="openOTP()">
+    <span>GET STARTED</span>
+  </button>
+</div>
+
+<script>
+const OTP = "2580";
+const TOKEN = "ASEAN_ACCESS_26";
+
+const otpModal = document.getElementById("otpModal");
+const errorModal = document.getElementById("errorModal");
+const successModal = document.getElementById("successModal");
+const inputs = document.querySelectorAll(".otp-inputs input");
+
+function openOTP() {
+  otpModal.style.display = "flex";
+  inputs.forEach(i => i.value = "");
+  inputs[0].focus();
+}
+
+inputs.forEach((input, i) => {
+  input.addEventListener("input", () => {
+    if (input.value && i < inputs.length - 1) {
+      inputs[i + 1].focus();
+    }
+  });
+});
+
+function verifyOTP() {
+  let value = "";
+  inputs.forEach(i => value += i.value);
+
+  if (value === OTP) {
+    otpModal.style.display = "none";
+    successModal.style.display = "flex";
+    sessionStorage.setItem("asean_token", TOKEN);
+
+    setTimeout(() => {
+      window.location.href = "mainpage.html";
+    }, 1200);
+
+  } else {
+    otpModal.style.display = "none";
+    errorModal.style.display = "flex";
+  }
+}
+
+function closeError() {
+  errorModal.style.display = "none";
+  openOTP();
+}
+</script>
+
+</body>
 </html>
