@@ -17,6 +17,7 @@
     window.location.replace("index.html");
   }
 </script>
+<script src="global.js"></script>
 
 
   <style>
@@ -272,7 +273,7 @@
   }
 
   .footer {
-  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
   position: fixed;
   height: 50px;
   background-color: #CE1126;
@@ -281,6 +282,9 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-top-left-radius: 15px;
+  border-top-right-radius : 15px;
+
 }
 
 .nav-icon {
@@ -293,6 +297,7 @@
   padding: 0;
   justify-content: space-around;
   margin: 0;
+
 }
 
 .ul {
@@ -301,6 +306,11 @@ display: flex;
 
 .nav-icon img {
   height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon img:hover {
+  transform: scale(1.2);
 }
 
 }
@@ -316,7 +326,6 @@ display: flex;
 
     <div class="containerheader">
       <a class="icon" href="mainpage.html">
-        <img src="icons/arrow-circle-left.svg" alt="back">
       </a>
 
       <button class="button" onclick="openModal()">CREATE ID</button>
@@ -350,7 +359,7 @@ display: flex;
           </thead>
           <tbody>
             <tr>
-              <td>ASEAN-_2026_001</td>
+              <td>####_###_##</td>
               <td>JOHN DOE</td>
               <td>PDRRMO PALAWAN</td>
               <td>INCIDENT COMMANDER</td>
@@ -361,9 +370,9 @@ display: flex;
         </table>
       </div>
     </div>
-    <div class="footer">
+      <div class="footer">
         <ul class="nav-icon">
-          <li><a href="imt-e-id.html"><img src="icons/back.png" alt="back"></a></li>
+          <li><a href="javascript:void(0)" onclick="goBack()"><img src="icons/back.png" alt="back"></a></li>
           <li><a href="#"><img src="icons/resources-download.png" alt="resources"></a></li>
           <li><a href="mainpage.html"><img src="icons/house-bold-label.png" alt="home" class="hbutton"></a></li>
           <li><a href="directories.html"><img src="icons/directories.png" alt="directories"></a></li>

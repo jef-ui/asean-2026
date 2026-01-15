@@ -16,6 +16,7 @@
     window.location.replace("index.html");
   }
 </script>
+<script src="global.js"></script>
 
     <style>
 
@@ -128,6 +129,10 @@
   display: block;
 }
 
+footer {
+  display: none;
+}
+
 
     /* ---------- TABLET & MOBILE ---------- */
 @media (max-width: 1024px) {
@@ -181,6 +186,47 @@
   p, b {
     font-size: 16px;
   }
+
+.footer {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  position: fixed;
+  height: 50px;
+  background-color: #CE1126;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 15px;
+  border-top-right-radius : 15px;
+
+}
+
+.nav-icon {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  justify-content: space-around;
+  margin: 0;
+
+}
+
+.ul {
+display: flex;
+}
+
+.nav-icon img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon img:hover {
+  transform: scale(1.2);
+}
 }
 
 
@@ -216,10 +262,17 @@
           <img src="icons/user-list.svg" alt="icon" class="icon">
           <p>Divisions</p>
         </div></a>
-
-        
-
       </div>
+      <div class="footer">
+        <ul class="nav-icon">
+          <li><a href="javascript:void(0)" onclick="goBack()"><img src="icons/back.png" alt="back"></a></li>
+          <li><a href="#"><img src="icons/resources-download.png" alt="resources"></a></li>
+          <li><a href="mainpage.html"><img src="icons/house-bold-label.png" alt="home" class="hbutton"></a></li>
+          <li><a href="directories.html"><img src="icons/directories.png" alt="directories"></a></li>
+          <li><a href="googlemap.html"><img src="icons/navmat.png" alt="googlemap"></a></li>
+        </ul>
+      </div>
+
     </div>
   </body>
 </html>
