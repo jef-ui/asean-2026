@@ -405,6 +405,25 @@ display: flex;
   .dbtable td {
     padding: 10px 12px;
   }
+
+  /* Reduce long text size for Designation / Agency on mobile */
+@media (max-width: 768px) {
+  .dbtable td:nth-child(3) {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    white-space: normal; /* allow wrapping */
+    max-width: 220px;
+  }
+}
+
+/* Extra small phones */
+@media (max-width: 480px) {
+  .dbtable td:nth-child(3) {
+    font-size: 0.7rem;
+    max-width: 180px;
+  }
+}
+
 }
 
 
