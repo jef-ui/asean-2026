@@ -166,6 +166,58 @@
       box-shadow: 0 10px 30px rgba(0,0,0,0.3);
     }
 
+     /* footer start of desktop */
+
+  .footer {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  position: fixed;
+  height: 45px;
+  background-color: #3268b3;
+  width: 100%;
+  min-width: 20px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 100px;
+  border-top-left-radius: 100px;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+/* Hidden state */
+.footer.hide {
+  transform: translateY(100%);
+}
+.nav-icon {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+
+}
+
+.ul {
+display: flex;
+}
+
+.nav-icon img {
+  height: 35px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon img:hover {
+  transform: scale(1.2);
+}
+
+/* end of nav for desktop */
+
+
     .modal-box h2 {
       margin-bottom: 15px;
       color: #b91c1c;
@@ -429,6 +481,9 @@ display: flex;
 
 }
 
+
+ 
+
   </style>
 </head>
 
@@ -440,8 +495,7 @@ display: flex;
 
     <div class="containerheader">
       <a class="icon" href="directories.html">
-        <img src="icons/arrow-circle-left.svg" alt="back">
-        <h2 class="">REGIONAL INCIDENT MANAGEMENT TEAM</h2>
+        <h2 >REGIONAL INCIDENT MANAGEMENT TEAM</h2>
       </a>
 
 
