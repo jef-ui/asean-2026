@@ -90,7 +90,7 @@
       align-items: center;
       gap: 15px;
       width: 80%;
-      margin-left: 150px;
+      margin: 0 auto;
     }
 
     .main-container {
@@ -100,13 +100,7 @@
       width: 100%;
     }
 
-    .main {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 80%;
-      gap: 20px;
-    }
+
 
     /* Buttons & Icons */
     .button {
@@ -137,26 +131,7 @@
       transform: scale(1.1);
     }
 
-    /* Table */
-    .dbtable {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .dbtable th {
-      color: #001c55;
-      padding: 10px 16px;
-      text-align: left;
-      border: 1px solid black;
-    }
-
-    .dbtable td {
-      font-size: 12px;
-      font-weight: 500;
-      padding: 10px 16px;
-      text-align: left;
-      border: 1px solid black;
-    }
+   
 
     .modal-overlay {
       position: fixed;
@@ -315,6 +290,113 @@ display: flex;
 
 }
 
+/* TABLE PROPERTIES */
+
+
+.main-container,
+.main {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.table-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+
+.dbtable {
+  width: 100%;
+  min-width: 900px; 
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+
+.dbtable thead {
+  background-color: #f8fafc;
+}
+
+.dbtable th {
+  text-align: left;
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 2px solid #e5e7eb;
+  white-space: nowrap;
+}
+
+
+.dbtable td {
+  padding: 14px 16px;
+  font-size: 0.85rem;
+  color: #1f2937;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+
+.dbtable tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+
+.call-link {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.call-link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .dbtable {
+    font-size: 0.8rem;
+  }
+
+  .dbtable th,
+  .dbtable td {
+    padding: 12px 14px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .dbtable th,
+  .dbtable td {
+    padding: 10px 12px;
+  }
+
+
+@media (max-width: 768px) {
+  .dbtable td:nth-child(3) {
+    font-size: 0.75rem;
+    line-height: 1.3;
+    white-space: normal;
+    max-width: 220px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .dbtable td:nth-child(3) {
+    font-size: 0.7rem;
+    max-width: 180px;
+  }
+}
+
+}
+
   </style>
 </head>
 
@@ -353,6 +435,7 @@ display: flex;
 
     <div class="main-container">
       <div class="main">
+        <div class="table-wrapper">
         <table class="dbtable">
           <thead>
             <tr>
@@ -375,6 +458,7 @@ display: flex;
             </tr>
           </tbody>
         </table>
+        </div>
       </div>
     </div>
       <div class="footer">
