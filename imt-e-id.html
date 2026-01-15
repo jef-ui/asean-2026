@@ -254,8 +254,15 @@
   justify-content: space-around;
   border-top-left-radius: 15px;
   border-top-right-radius : 15px;
-
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
 }
+
+/* Hidden state */
+.footer.hide {
+  transform: translateY(100%);
+}
+
 
 .nav-icon {
   width: 80%;
@@ -311,4 +318,24 @@ display: flex;
       </div>
     </div>
   </body> 
+
+  <script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector('.footer');
+
+  window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 80) {
+      // Scrolling DOWN → hide footer
+      footer.classList.add('hide');
+    } else {
+      // Scrolling UP → show footer
+      footer.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+
 </html>

@@ -31,6 +31,10 @@
       background: #f2f4f8;
     }
 
+    .nav-icon {
+      display: none;
+    }
+
       body::before {
   content: "";
   background-image: url("images/background.png");
@@ -154,6 +158,74 @@
         min-height: 420px;
       }
     }
+
+    @media (max-width: 480px) {
+
+  .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .icon img {
+    height: 35px;
+  }
+
+  .button a {
+    font-size: 15px;
+  }
+    .dbtable {
+    min-width: 700px; 
+  }
+  
+
+  .footer {
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  position: fixed;
+  height: 50px;
+  background-color: #CE1126;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 15px;
+  border-top-right-radius : 15px;
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+
+/* Hidden state */
+.footer.hide {
+  transform: translateY(100%);
+}
+
+.nav-icon {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  justify-content: space-around;
+  margin: 0;
+
+}
+
+.ul {
+display: flex;
+}
+
+.nav-icon img {
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.nav-icon img:hover {
+  transform: scale(1.2);
+}
+}
+
   </style>
 </head>
 
@@ -198,6 +270,16 @@
       </div>
     </div>
 
+          <div class="footer">
+        <ul class="nav-icon">
+          <li><a href="javascript:void(0)" onclick="goBack()"><img src="icons/back.png" alt="back"></a></li>
+          <li><a href="#"><img src="icons/resources-download.png" alt="resources"></a></li>
+          <li><a href="mainpage.html"><img src="icons/house-bold-label.png" alt="home" class="hbutton"></a></li>
+          <li><a href="directories.html"><img src="icons/directories.png" alt="directories"></a></li>
+          <li><a href="googlemap.html"><img src="icons/navmat.png" alt="googlemap"></a></li>
+        </ul>
+      </div>
+
   </div>
 
   <script>
@@ -214,6 +296,27 @@
       document.getElementById("mapFrame").src = url;
     }
   </script>
+
+  
+<script>
+  let lastScrollTop = 0;
+  const footer = document.querySelector('.footer');
+
+  window.addEventListener('scroll', () => {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollTop > lastScrollTop && scrollTop > 80) {
+      // Scrolling DOWN → hide footer
+      footer.classList.add('hide');
+    } else {
+      // Scrolling UP → show footer
+      footer.classList.remove('hide');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+
 
 </body>
 </html>
