@@ -38,20 +38,20 @@
         display: none;
       }
 
-  body::before {
-  content: "";
-  background-image: url("images/background.png");
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  z-index: -1;
-}
+      body::before {
+      content: "";
+      background-image: url("images/background.png");
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.5;
+      z-index: -1;
+    }
 
  /* footer start of desktop */
 
@@ -112,7 +112,7 @@ display: flex;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 
@@ -127,19 +127,21 @@ display: flex;
     }
 
     .container-grid {
-      width: 90%;
+      width: 100%;
       display: grid;
-      grid-template-columns: repeat(4, 300px);
-      grid-template-rows: auto;
+      grid-template-columns: repeat(4, 200px);
+      grid-template-rows: repeat(2, 200px);
+      grid-row: auto;
       justify-content: center;
-      gap: 40px;
+      gap: 10px;
+      margin-bottom: 20px;
       flex: 1;
     }
 
     .box {
       background-color: #0038A8;
-      height: 400px;
-      border-radius: 40px;
+      height: 200px;
+      border-radius: 25px;
       transition: transform 0.3s ease;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
     }
@@ -163,12 +165,6 @@ display: flex;
       text-align: center;
       padding: 10px;
     }
-
-    .box img {
-      display: block;
-      height: 200px;
-    }
-
     
     b {
       color: white;
@@ -222,9 +218,6 @@ footer {
     justify-content: center;
   }
 
-  .box img {
-    height: 140px;
-  }
 
   p, b {
     font-size: 18px;
@@ -234,8 +227,10 @@ footer {
 /* ---------- EXTRA SMALL PHONES ---------- */
 @media (max-width: 480px) {
 
-  .box img {
-    height: 120px;
+  .box {
+    height: 3 00px;
+    width: 300px;
+    margin: 0 auto;
   }
 
   p, b {
@@ -291,6 +286,16 @@ display: flex;
 }
 
 
+.icon {
+  height: 80px;
+}
+
+.containerheader h2 {
+  text-align: center;
+  color:   #0038A8;
+  font-size: 30px;
+}
+
 
  
 
@@ -302,27 +307,75 @@ display: flex;
       <div class="header">
         <img src="images/asean-ocd-logo.png" alt="aseanlogo" class="logo">
       </div>
+
+       <div class="containerheader">
+      <a class="icon" href="directories.html">
+        <h2 class="">ICS FORMS</h2>
+      </a>
       <div class="container-grid">
-
-        <a href="focalperson.html"><div class="box">
-          <img src="icons/user.svg" alt="icon" class="icon">
-          <b>Focal Persons</b>
+  
+        <a href="dlforms/ics_201.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 201</p>
         </div></a>
 
-        <a href="taskgroup.html"><div class="box">
-          <img src="icons/users-three.svg" alt="icon" class="icon">
-          <b>Task Groups</b>
+        <a href="dlforms/ics_202.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 202</p>
         </div></a>
 
-        <a href="imt.html"><div class="box">
-          <img src="icons/users-four.svg" alt="icon" class="icon">
-          <b>Regional IMT</b>
+        <a href="dlforms/ics_203.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 203</p>
         </div></a>
-        
-        <a href="division.html"><div class="box">
-          <img src="icons/user-list.svg" alt="icon" class="icon">
-          <b>Divisions</b>
+
+        <a href="dlforms/ics_204.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 204</p>
         </div></a>
+
+        <a href="dlforms/ics_205.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 205</p>
+        </div></a>
+
+        <a href="dlforms/ics_206.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 206</p>
+        </div></a>
+
+        <a href="dlforms/ics_208.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 208</p>
+        </div></a>
+
+        <a href="dlforms/ics_211.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 211</p>
+        </div></a>
+
+        <a href="dlforms/ics_213.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 213</p>
+        </div></a>
+
+        <a href="dlforms/ics_214.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 214</p>
+        </div></a>
+
+        <a href="dlforms/ics_215.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 215</p>
+        </div></a>
+
+        <a href="dlforms/ics_215a.pdf" download=""><div class="box">
+          <img src="icons/file-pdf.svg" alt="icon" class="icon">
+          <p>ICS 215A</p>
+        </div></a>
+
+
+      </div>
       </div>
       <div class="footer">
         <ul class="nav-icon">
