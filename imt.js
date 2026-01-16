@@ -36,7 +36,7 @@ const contacts = [
     position: "PLANNING SECTION CHIEF",
     name: "MARIA ALYSSA G. ABONALES",
     designation: "PDRRMO PALAWAN",
-    contact: "0927-115-3403 | 0908-211-8236",
+    contact: "0927-115-3403",
     email: "pdrrmopalawanriskcom@gmail.com | m.alyssaabonales@gmail.com"
   },
   {
