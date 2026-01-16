@@ -34,26 +34,26 @@ const contacts = [
   {
     // PSC  
     position: "PLANNING SECTION CHIEF",
-    name: "-",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "MARIA ALYSSA G. ABONALES",
+    designation: "PDRRMO PALAWAN",
+    contact: "0927-115-3403 | 0908-211-8236",
+    email: "pdrrmopalawanriskcom@gmail.com | m.alyssaabonales@gmail.com"
   },
   {
     // OSC
     position: "OPERATIONS SECTION CHIEF",
-    name: "-",
-    designation: "-",
+    name: "DAX MATILLANO",
+    designation: "CDRRMO PUERTO PRINCESA",
     contact: "-",
     email: "-"
   },
   {
     // LSC
     position: "LOGISTICS SECTION CHIEF",
-    name: "-",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "SAM ALBERT S. BRUNO",
+    designation: "PDRRMO PALAWAN",
+    contact: "0966-839-0894",
+    email: "sambruno041594@gmail.com"
   },
   {
     // FASC
