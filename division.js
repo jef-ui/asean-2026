@@ -1,9 +1,9 @@
 const contacts = [
   {
-    position: "STAGING AREA 2",
-    name: "-",
-    designation: "-",
-    contact: "-",
+    position: "AR GROUP SUPERVISORS",
+    name: "RAMON D. MAPANAO",
+    designation: "PDRRMO PALAWAN",
+    contact: "0917-938-4972",
     email: "-"
   },
   {
