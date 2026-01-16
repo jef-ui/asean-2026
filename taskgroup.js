@@ -38,15 +38,15 @@ const contacts = [
     position: "DISASTER RISK REDUCTION AND MANAGEMENT",
     name: "MARIA AIZA S. SIASON (Primary)",
     designation: "CHIEF RRMS, OCD MIMAROPA",
-    contact: "-",
-    email: "-"
+    contact: "0917-842-0318",
+    email: "mimaropa@ocd.gov.ph"
   },
   {
     position: "DISASTER RISK REDUCTION AND MANAGEMENT",
     name: "MARY AN B. ACEVEDA (Alternate)",
     designation: "CHIEF PLANS, OCD MIMAROPA",
-    contact: "-",
-    email: "-"
+    contact: "0966-891-0024",
+    email: "acevedamaryanbacarra@gmail.com"
   },
   {
     position: "CAMP MANAGEMENT",
@@ -59,15 +59,22 @@ const contacts = [
     position: "LOGISTICS",
     name: "JERVIS LLOYD ATILANO",
     designation: "CDO II, OCD MIMAROPA",
-    contact: "09173007955",
+    contact: "0917-300-7955",
     email: "jervsatilano@gmail.com"
   },
   {
     position: "PUBLIC WORKS AND ENGINEERING",
-    name: "MARIELLE CRIZZA BURCE",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "ENGR. OLIVER P. MAULEON",
+    designation: "OIC SECTION CHIEF, MAINTENANCE DIV. DPWH",
+    contact: "0929-694-9090",
+    email: "maintenance.dpwh4b@gmail.com"
+  },
+  {
+    position: "PUBLIC WORKS AND ENGINEERING",
+    name: "ENGR. JOSE CONDE",
+    designation: "ENGR II - PALAWAN 1ST DEO, DPWH",
+    contact: "0917-302-6233",
+    email: "conde.jose@dpwh.gov.ph"
   },
 
 

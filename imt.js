@@ -1,5 +1,13 @@
 const contacts = [
   {
+    // IC
+    position: "ALTERNATE INCIDENT COMMANDER",
+    name: "ENGR. ",
+    designation: "-",
+    contact: "-",
+    email: "-"
+  },
+  {
     // PIO
     position: "PUBLIC INFORMATION OFFICER",
     name: "-",
@@ -10,18 +18,18 @@ const contacts = [
   {
     // SOFR
     position: "SAFETY OFFICER",
-    name: "-",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "JIMMY V. YBAS",
+    designation: "PDRRMO PALAWAN",
+    contact: "0917-110-9195",
+    email: "jybas74@gmail.com"
   },
   {
     // LOFR
     position: "LIASON OFFICER",
-    name: "-",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "MERLYN D. TAER",
+    designation: "PDRRMO PALAWAN",
+    contact: "0907-066-9043",
+    email: "taermerlyn@gmail.com"
   },
   {
     // PSC  
