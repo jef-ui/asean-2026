@@ -7,16 +7,44 @@ const contacts = [
     email: "-"
   },
   {
+    position: "EMERGENCY RESPONSE GROUP SUPERVISOR",
+    name: "BARRISTER CARL L. CONDE",
+    designation: "BFP PALAWAN",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "STAGING AREA 1",
+    name: "JOSEPH ARMSTRONG SANDOVAL",
+    designation: "MDRRMO CORON",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "STAGING AREA 2",
+    name: "LLOYD M. PEPITO",
+    designation: "MDRRMO CULION",
+    contact: "-",
+    email: "-"
+  },
+  {
     position: "STAGING AREA 3",
-    name: "-",
-    designation: "-",
+    name: "JOHN ALVIN PRIMA",
+    designation: "MDRRMO CULION",
     contact: "-",
     email: "-"
   },
   {
     position: "STAGING AREA 4",
-    name: "-",
-    designation: "-",
+    name: "ARCIEVAL JIMENEZ",
+    designation: "MDRRMO BUSUANGA",
+    contact: "-",
+    email: "-"
+  },
+  {
+    position: "STAGING AREA 5",
+    name: "DANIEL FERNAN JR.",
+    designation: "MDRRMO BUSUANGA",
     contact: "-",
     email: "-"
   },
@@ -36,10 +64,10 @@ const contacts = [
   },
   {
     position: "FIRE SUPPRESSION AND SAFETY TEAMS",
-    name: "-",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "FINSP RICO L PAGMANOJA",
+    designation: "PROVINCIAL CHIEF / OPERATIONS BRANCH / BFP PALAWAN",
+    contact: "0917-599-6697",
+    email: "opfmpalawan2024@gmail.com"
   },
   {
     position: "CBRN TEAMS (As necessarry)",
