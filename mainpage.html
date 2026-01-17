@@ -10,6 +10,7 @@
 <link rel="icon" href="images/asean-logo.png" type="asean.png">
 <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <script src="assets/js/global.js"></script>
+
 <script>
   const TOKEN = "ASEAN_ACCESS_26";
 
@@ -143,6 +144,16 @@
 /* ---------- MOBILE PHONES ---------- */
 @media (max-width: 768px) {
 
+  .phtime {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #phDate {
+    font-size: 40px;
+    text-align: center;
+  }
+
   .header img {
     height: auto;
     max-width: 90%;
@@ -185,6 +196,25 @@
   }
 }
 
+.phtime img {
+  height: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.phtime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+#phDate {
+  color: rgb(43, 43, 43);
+  font-size: 20px;
+  font-weight: bold;
+}
 
 
     
@@ -197,6 +227,13 @@
       <div class="header">
         <img src="images/asean-ocd-logo.png" alt="aseanlogo" class="logo">
       </div>
+
+    <div class="phtime">
+      <img src="images/phflag.png" alt="flag" class="phflag">
+      <span id="phDate"></span>
+    </div>
+
+
       <div class="container-grid">
 
         <a href="imt-e-id.html"><div class="box">
@@ -231,4 +268,8 @@
       </div>
     </div>
   </body>
+
+  <script src="livedate.js"></script>
+
+  
 </html>
