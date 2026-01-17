@@ -2,10 +2,10 @@ const contacts = [
   {
     // IC
     position: "ALTERNATE INCIDENT COMMANDER",
-    name: "ENGR. ",
-    designation: "-",
-    contact: "-",
-    email: "-"
+    name: "ENGR. FERNANDO A. LOPEZ",
+    designation: "MDRRMO CORON",
+    contact: "0916-625-2162",
+    email: "coronmdrrmc@gmail.com"
   },
   {
     // PIO
@@ -44,8 +44,8 @@ const contacts = [
     position: "OPERATIONS SECTION CHIEF",
     name: "DAX MATILLANO",
     designation: "CDRRMO PUERTO PRINCESA",
-    contact: "-",
-    email: "-"
+    contact: "0917-895-5065",
+    email: "daxmatillano77@gmail.com"
   },
   {
     // LSC

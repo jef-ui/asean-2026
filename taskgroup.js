@@ -35,9 +35,30 @@ const contacts = [
     email: "virgo.pinangay@dict.gov.ph "
   },
   {
+    position: "EMERGENCY TELECOMMUNICATION",
+    name: "ENGR. JEANETTE RIPALDA",
+    designation: "ENGR. II DICT PALAWAN",
+    contact: "0961-728-3770",
+    email: "jeanette.ripalda@dict.gov.ph"
+  },
+    {
+    position: "EMERGENCY TELECOMMUNICATION",
+    name: "ENGR. ZANMAN GERO A. BONAYON",
+    designation: "ENGR. I DICT PALAWAN",
+    contact: "0975-943-4539",
+    email: "zanmangero.bonayon @dict.gov.ph"
+  },
+    {
+    position: "EMERGENCY TELECOMMUNICATION",
+    name: "ENGR. EUGENE REGODOS",
+    designation: "ENGR. I DICT PALAWAN",
+    contact: "-",
+    email: "eugene.regodos@dict.gov.ph"
+  },
+  {
     position: "DISASTER RISK REDUCTION AND MANAGEMENT",
     name: "MARIA AIZA S. SIASON (Primary)",
-    designation: "CHIEF RRMS, OCD MIMAROPA",
+    designation: "CHIEF, REHABILITATION AND RECOVERY MANAGEMENT SECTION, OCD MIMAROPA",
     contact: "0917-842-0318",
     email: "mimaropa@ocd.gov.ph"
   },
