@@ -19,7 +19,7 @@ function updatePHDateTime() {
   const date = new Intl.DateTimeFormat('en-PH', dateOptions).format(now);
   const time = new Intl.DateTimeFormat('en-PH', timeOptions).format(now);
 
-  document.getElementById('phDate').textContent = `${date} ${time}`;
+  document.getElementById('phDate').textContent = `${date} | ${time}`;
 }
 
 // run immediately
