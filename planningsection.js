@@ -3,23 +3,23 @@ const contacts = [
     position: "STATUS CHECK-IN RECORDERS/ RESOURCE UNIT STAFF",
     name: "MICO ECHAGUE",
     designation: "CDRRMO PUERTO PRINCESA",
-    contact: "-",
-    email: "-"
+    contact: "0961-938-5184 ",
+    email: "ppcdrrmo.rpsmico@gmail.com"
   },
 
     {
     position: "STATUS CHECK-IN RECORDERS/ RESOURCE UNIT STAFF",
     name: "JENARD CLEMENTE",
     designation: "CDRRMO PUERTO PRINCESA",
-    contact: "-",
-    email: "-"
+    contact: "0995-960-2915",
+    email: "jenardclems@gmail.com"
   },
   {
     position: "SITUATION UNIT LEADER",
     name: "MARWIN T. PADILLA",
     designation: "MDRRMO CORON",
-    contact: "-",
-    email: "-"
+    contact: "0945-438-8251",
+    email: "coronmdrrmc@gmail.com"
   },
   {
     position: "EVENT DOCUMENTATION/ FOB",

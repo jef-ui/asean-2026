@@ -17,8 +17,8 @@ const contacts = [
     position: "STAGING AREA 1",
     name: "JOSEPH ARMSTRONG SANDOVAL",
     designation: "MDRRMO CORON",
-    contact: "-",
-    email: "-"
+    contact: "0945-489-4865",
+    email: "coronmdrrmc@gmail.com"
   },
   {
     position: "STAGING AREA 2",
