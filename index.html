@@ -87,6 +87,22 @@ body::before {
   font-size: 24px;
   text-align: center;
 }
+
+.button {
+  display: flex;
+}
+
+.button img {
+  height: 20px;
+
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px ;
+}
 </style>
 </head>
 
@@ -135,7 +151,7 @@ body::before {
   </div>
 
   <button class="button" onclick="openOTP()">
-    <span>GET STARTED</span>
+    <span>GET STARTED <img src="icons/arrow-right-bold.svg" alt=""></span>
   </button>
 </div>
 

@@ -11,7 +11,7 @@ const contacts = [
     name: "MARIA AIZA S. SIASON",
     designation: "CHIEF, REHABILITATION AND RECOVERY MANAGEMENT SECTION, OCD MIMAROPA",
     contact: "0917-842-0318",
-    email: "mimaropa@ocd.gov.ph"
+    email: "mimaropa@ocd.gov.ph"  
   },
   {
     position: "JOINT PLANNING GROUP",
